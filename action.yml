@@ -1,0 +1,22 @@
+name: "Star Tracker"
+description: "Update Star Gazers Status Through Slack"
+inputs:
+  token: # id of input
+    description: "Github Access token"
+    required: true
+    default: ""
+  slack_webhook: # id of input
+    description: "Slack Webhook URL"
+    required: true
+    default: ""
+  owner: # id of input
+    description: "Github User/Org"
+    required: true
+    default: ""
+  repo: # id of input
+    description: "Github Repo"
+    required: true
+    default: ""
+runs:
+  using: "node12"
+  main: "index.js"

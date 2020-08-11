@@ -1,0 +1,20 @@
+on: [push]
+
+# on:
+#   schedule:
+#     - cron: "59 */23 * * *"
+
+jobs:
+  StarTracker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Star Tracker
+        uses: ./ # Uses an action in the root directory
+        id: star_tracker
+        with:
+          token: ${{ secrets.TOKEN }}
+          slack_webhook: ${{ secrets.SLACK_HOOK }}
+          owner: chaos-mesh
+          repo: chaos-mesh

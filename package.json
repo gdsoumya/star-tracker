@@ -1,0 +1,23 @@
+{
+  "name": "star-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdsoumya/star-tracker.git"
+  },
+  "author": "Soumya Ghosh Dastidar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gdsoumya/star-tracker/issues"
+  },
+  "homepage": "https://github.com/gdsoumya/star-tracker#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@octokit/request": "^5.4.7"
+  }
+}
